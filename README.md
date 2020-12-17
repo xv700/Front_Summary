@@ -24,7 +24,8 @@
 
 ### 002.网页消息传递
 
-#### 定义
+#### 定义  
+
 > 在浏览器中，两个不同页面（A页面的window ！= B页面的window）网页之间的消息传递。
 
 #### 可能出现的场景
@@ -36,7 +37,7 @@
 
 #### 文档  
 
-点击阅读：https://xv700.gitee.io/message-communication-for-web/  
+点击阅读：[网页消息传递](/Message_Communication)  
 
 #### 文档代码
 
