@@ -6,7 +6,8 @@
 
 ### 001.前端跨域
 
-#### 跨域定义  
+#### 跨域定义    
+
 > 即请求的地址与被请求的地址协议头、域名、端口有一个不一样就叫跨域。相反,不跨域即叫同源。
 
 | http://www.example.com/detail.html | 与以下地址对比 |  
@@ -17,6 +18,9 @@
 | http://www.example.com:8080/detail.html | 不同源，端口不同 |  
 | http://www.example.com/other.html | 同源，只是目录不同 |  
 
+#### 可能出现的场景
+
+#### 前端跨域解决方案
 
 ### 002.网页消息传递
 
@@ -33,6 +37,8 @@
 #### 文档  
 
 点击阅读：https://xv700.gitee.io/message-communication-for-web/  
+
+#### 文档代码
 
 ## 原生js问题
 
