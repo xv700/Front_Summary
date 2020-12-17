@@ -7,6 +7,11 @@
 
 ### 场景
 
+1.浏览A页面内通过window.open打开N>=2个以上的tab页面，A页面与打开的tab页面互相通信的场景(包含跨域的情况)
+2.浏览A页面内通过非window.open(如a连接)打开N>=2个以上的tab页面，A页面与打开的tab页面互相通信的场景(不能跨域)
+3.浏览A页面内使用了N>=1个以上iframe，A页面与打开的iframe页面互相通信的场景(包含跨域的情况)
+4.浏览A页面内使用了N>=1个以上Webwork，A页面与打开的Webwork页面互相通信的场景(不能跨域)
+
 https://gitee.com/xv700/Message-communication-for-web
 
 ## 前端跨域
