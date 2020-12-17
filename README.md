@@ -2,8 +2,11 @@
 
 ## 网页消息传递
 
+### 定义
 > 什么是网页消息通信，即在浏览器中，两个不同页面（A页面的window ！= B页面的window）网页之间的消息传递。
----
+
+### 场景
+
 https://gitee.com/xv700/Message-communication-for-web
 
 ## 前端跨域
