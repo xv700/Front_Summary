@@ -1,8 +1,10 @@
 <h1 align="center">前端技术总结</h1>
 
-国内站点:[码云](https://gitee.com/xv700/Message-communication-for-web)  
+国内镜像:[码云](https://gitee.com/xv700/Message-communication-for-web)  
 
-## 网页消息传递
+## 001.前端跨域
+
+## 002.网页消息传递
 
 ### 定义
 > 在浏览器中，两个不同页面（A页面的window ！= B页面的window）网页之间的消息传递。
@@ -18,15 +20,16 @@
 
 点击阅读：https://xv700.gitee.io/message-communication-for-web/  
 
-## 前端跨域
+## 003.Blob的使用
 
-## Blob的使用
-
-## Web worker
+## 004.Web Worker
  
-## IndexedDB 
+## 005.IndexedDB 
 
-## Canvas
+## 006.Canvas
+
+## 007.WebSocket
+
 
 非原生的分离出去
 ## js加密
