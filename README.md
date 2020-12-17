@@ -6,6 +6,21 @@
 
 ### 001.前端跨域
 
+#### 跨域定义  
+> 即请求的地址与被请求的地址协议头、域名、端口有一个不一样就叫跨域。相反,不跨域即叫同源。
+
+(http://www.example.com/detail.html) 与以下地址对比
+http://api.example.com/detail.html | 不同源 | 域名不同 |
+https://www.example.com/detail.html | 不同源 | 协议不同 |
+http://www.example.com:8080/detail.html | 不同源 | 端口不同
+http://api.example.com:8080/detail.html | 不同源 | 域名、端口不同
+https://api.example.com/detail.html | 不同源 | 协议、域名不同
+https://www.example.com:8080/detail.html | 不同源 | 端口、协议不同
+http://www.example.com/other.html | 同源 | 只是目录不同 |
+
+| --- | --- | --- |
+| http://www.example.com/detail.html | 与以下地址对比 |
+
 ### 002.网页消息传递
 
 #### 定义
@@ -28,11 +43,11 @@
 
 ### 002.Web Worker
  
-### 005.IndexedDB 
+### 003.IndexedDB 
 
-### 006.Canvas
+### 004.Canvas
 
-### 007.WebSocket
+### 005.WebSocket
 
 非原生的分离出去
 
