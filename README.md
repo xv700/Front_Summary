@@ -2,6 +2,8 @@
 
 ## 网页消息传递
 
+> 什么是网页消息通信，即在浏览器中，两个不同页面（A页面的window ！= B页面的window）网页之间的消息传递。
+---
 https://gitee.com/xv700/Message-communication-for-web
 
 ## 前端跨域
@@ -12,8 +14,15 @@ https://gitee.com/xv700/Message-communication-for-web
  
 ## IndexedDB 
 
+## Canvas
+
+非原生的分离出去
 ## js加密
+
+https://github.com/ricmoo/aes-js
 
 ## 图片压缩
 
-## Canvas
+https://github.com/fengyuanchen/compressorjs
+
+
