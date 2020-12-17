@@ -16,9 +16,10 @@ http://www.example.com:8080/detail.html | 不同源 | 端口不同
 http://api.example.com:8080/detail.html | 不同源 | 域名、端口不同
 https://api.example.com/detail.html | 不同源 | 协议、域名不同
 https://www.example.com:8080/detail.html | 不同源 | 端口、协议不同
-http://www.example.com/other.html | 同源 | 只是目录不同 |
+http://www.example.com/other.html | 同源 | 只是目录不同 |  
 
-| --- | --- | --- |
+| 字段名 | 可能的值 |  
+| --- | --- |  
 | http://www.example.com/detail.html | 与以下地址对比 |
 
 ### 002.网页消息传递
