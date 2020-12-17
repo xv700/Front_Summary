@@ -28,7 +28,7 @@
 
 > 在浏览器中，两个不同页面（A页面的window ！= B页面的window）网页之间的消息传递。
 
-点击阅读：[网页消息传递](/002.Message_Communication)  
+建议右键新开页面阅读：[网页消息传递详说](/002.Message_Communication)  
 
 
 ### 003.Javascript中事件冒泡的问题
