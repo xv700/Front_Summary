@@ -11,7 +11,8 @@
 
 | http://www.example.com/detail.html | 与以下地址对比 |  
 | --- | --- |  
-| http://api.example.com/detail.html | 不同源，域名不同 |  
+| http://api.example.com/detail.html | 不同源，子域域名不同，根域名相同 |  
+| http://nav.qianlimu.net/ | 不同源，域名完全不同 |  
 | https://www.example.com/detail.html | 不同源，协议不同 |  
 | http://www.example.com:8080/detail.html | 不同源，端口不同 |  
 | http://www.example.com/other.html | 同源，只是目录不同 |  
