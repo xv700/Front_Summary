@@ -37,7 +37,7 @@
 
 #### 文档  
 
-点击阅读：[网页消息传递](/Message_Communication)  
+点击阅读：[网页消息传递](/002.Message_Communication)  
 
 #### 文档代码
 
