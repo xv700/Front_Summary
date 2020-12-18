@@ -14,3 +14,12 @@
 ## 文档  
 
 右键新打开页面阅读：https://xv700.gitee.io/message-communication-for-web/  
+
+### WebSocket （可跨域）
+### Server-Sent Events
+
+postMessage（可跨域）
+Worker之SharedWorker
+localStorage
+BroadcastChannel
+Cookies
