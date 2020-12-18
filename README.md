@@ -20,9 +20,24 @@
 
 建议右键新开页面阅读：[网页消息传递详说](/002.Message_Communication)  
 
-
 ### 003.事件冒泡的问题
 
+#### 定义   
+
+> 当一个元素接收到事件的时候 会把他接收到的事件传给自己的父级，一直到window 。（注意这里传递的仅仅是事件并不传递所绑定的事件函数。所以如果父级没有绑定事件函数，就算传递了事件 也不会有什么表现 但事件确实传递了。）
+
+```js
+var div1 = document.getElementById("div1");
+var div2 = document.getElementById("div2");
+   div2.onclick = function(){alert(1);};
+   div1.onclick = function(){alert(2);};//父亲
+//html代码
+
+ <div id="div1">
+
+    <div id="div2"></div>
+ </div>
+```
 
 ## 原生js问题
 
