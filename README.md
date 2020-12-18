@@ -10,17 +10,7 @@
 
 > 即请求的地址与被请求的地址协议头、域名、端口有一个不一样就叫跨域。相反,不跨域即叫同源。
 
-| http://www.example.com/detail.html | 与以下地址对比 |  
-| --- | --- |  
-| http://api.example.com/detail.html | 不同源，子域域名不同，根域名相同 |  
-| http://nav.qianlimu.net/ | 不同源，域名完全不同 |  
-| https://www.example.com/detail.html | 不同源，协议不同 |  
-| http://www.example.com:8080/detail.html | 不同源，端口不同 |  
-| http://www.example.com/other.html | 同源，只是目录不同 |  
-
--  可能出现的场景
-
--  前端跨域解决方案
+建议右键新开页面阅读：[前端跨域](/002.Message_Communication)  
 
 ### 002.网页消息传递
 
@@ -28,10 +18,10 @@
 
 > 在浏览器中，两个不同页面（A页面的window ！= B页面的window）网页之间的消息传递。
 
-建议右键新开页面阅读：[网页消息传递详说](/002.Message_Communication)  
+建议右键新开页面阅读：[网页消息传递详说](/001.Cross-Origin)  
 
 
-### 003.Javascript中事件冒泡的问题
+### 003.事件冒泡的问题
 
 
 ## 原生js问题
