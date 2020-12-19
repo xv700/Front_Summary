@@ -13,8 +13,11 @@
 | http://www.example.com:8080/detail.html | 不同源，端口不同 |  
 | http://www.example.com/other.html | 同源，只是目录不同 |  
 
--  可能出现的场景
+### 同源策略限制以下几种行为：
 
+- Cookie、LocalStorage 和 IndexDB 无法读取  
+- DOM和JS对象无法获得  
+- AJAX 请求不能发送  
 
 -  前端跨域解决方案
 
