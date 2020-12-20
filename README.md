@@ -11,9 +11,9 @@ GITHUB地址:https://github.com/xv700/Front_Summary
 
 ###  001.前端跨域 
 
--  前端跨域定义    
+#### 前端跨域定义    
 
-> 即请求的地址与被请求的地址协议头、域名、端口有一个不一样就叫跨域。相反,不跨域即叫同源。
+> 首先什么是同源策略？同源策略/SOP（Same origin policy）是一种约定，由Netscape公司1995年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到**XSS**、**CSFR**等攻击。所谓同源是指"协议+域名+端口"三者相同，即便两个不同的域名指向同一个ip地址，也非同源。
 
 建议右键新开页面阅读：[前端跨域](/001.Cross-Domain)  
 
@@ -47,6 +47,9 @@ var div2 = document.getElementById("div2");
 
 （例：0.1+0.7=0.7999999999999999）
 
+https://www.html.cn/archives/7340/
+https://www.cnblogs.com/powerwu/articles/13023859.html
+
 ### 004.获取浏览器当前页面的滚动条高度
 
 
@@ -57,13 +60,15 @@ var div2 = document.getElementById("div2");
 
 ### 006.监听某个div滚动，div宽高变化
 
-### 007.js获取鼠标坐标
+### 007.获取鼠标坐标
 
 ### 008.禁止表单记住密码自动填充
 
 https://github.com/haizlin/fe-interview/issues/494
 
-### 009.垂直水平居中
+### 009.复制粘贴，粘贴截图
+
+### 010.垂直水平居中
 
 ## 原生API用法
 
