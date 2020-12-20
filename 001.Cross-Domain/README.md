@@ -3,7 +3,7 @@
 
 ## 定义    
    
-> 首先什么是同源策略？同源策略/SOP（Same origin policy）是一种约定，由Netscape公司1995年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到**XSS**、**CSFR**等攻击。所谓同源是指"协议+域名+端口"三者相同，即便两个不同的域名指向同一个ip地址，也非同源。
+> 首先什么是同源策略？同源策略/SOP（Same origin policy）是一种约定，由Netscape公司1995年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到<strong>XSS</strong>、**CSFR**等攻击。所谓同源是指"协议+域名+端口"三者相同，即便两个不同的域名指向同一个ip地址，也非同源。
    
 ### 同源策略限制以下几种行为：
 
@@ -43,7 +43,8 @@ https://segmentfault.com/a/1190000011145364
 
 <p>通常为了减轻web服务器的负载，我们把js、css，img等静态资源分离到另一台独立域名的服务器上，在html页面中再通过相应的标签从不同域名下加载静态资源，而被浏览器允许，基于此原理，我们可以通过动态创建script，再请求一个带参网址实现跨域通信。</p>  
 
-```html
+```html  
+
 <!--index.html-->
  <script>
     var script = document.createElement('script');
@@ -58,15 +59,17 @@ https://segmentfault.com/a/1190000011145364
 
         console.log(res);//这里就输出了服务端返回的数据
     }
- </script>
+ </script>  
+
 ```
 
 
-<p>服务端返回如下（返回时即执行全局函数）：</p>  
-```js
-// 服务端的/login
-handleCallback({"status": true, "user": "admin"})
-```  
+<p>服务端返回如下（返回时即执行全局函数）：</p>   
+
+```js  
+// 服务端的/login  
+handleCallback({"status": true, "user": "admin"})  
+```    
 
 <p>后端node.js代码示例：</p>    
 
