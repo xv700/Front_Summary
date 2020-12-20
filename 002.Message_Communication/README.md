@@ -15,11 +15,46 @@
 
 右键新打开页面阅读：https://xv700.gitee.io/message-communication-for-web/  
 
-### WebSocket （可跨域）
-### Server-Sent Events
+### WebSocket （可跨域）  
 
-postMessage（可跨域）
-Worker之SharedWorker
-localStorage
-BroadcastChannel
-Cookies
+### Server-Sent Events  
+
+### postMessage（可跨域）  
+
+### Worker之SharedWorker  
+
+### localStorage  
+
+### Cookies  
+
+### iframe 之 (contentWindow/contentDocument）  
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<script>
+function changeStyle(){
+	var x=document.getElementById("myframe");
+	var y=(x.contentWindow || x.contentDocument);
+	if (y.document)y=y.document;
+	y.body.style.backgroundColor="#0000ff";
+}
+</script>
+</head>
+<body>
+	
+<iframe id="myframe" src="demo_iframe.htm">
+<p>你的浏览器不支持iframes。</p>
+</iframe>
+<br><br>
+<input type="button" onclick="changeStyle()" value="修改背景颜色">
+
+</body>
+</html>
+```  
+
+### BroadcastChannel  
+
