@@ -3,7 +3,7 @@
 
 ## 定义    
    
-> 首先什么是同源策略？同源策略/SOP（Same origin policy）是一种约定，由Netscape公司1995年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到<strong>XSS</strong>、**CSFR**等攻击。所谓同源是指"协议+域名+端口"三者相同，即便两个不同的域名指向同一个ip地址，也非同源。
+> 首先什么是同源策略？同源策略/SOP（Same origin policy）是一种约定，由Netscape公司1995年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到XSS、CSFR等攻击。所谓同源是指"协议+域名+端口"三者相同，即便两个不同的域名指向同一个ip地址，也非同源。
    
 ### 同源策略限制以下几种行为：
 
@@ -63,11 +63,10 @@ https://segmentfault.com/a/1190000011145364
 
 ```
 
-
 <p>服务端返回如下（返回时即执行全局函数）：</p>   
 
 ```js  
-// 服务端的/login  
+// 服务端 http://www.domain2.com:8080/login?user=admin&callback=handleCallback Response
 handleCallback({"status": true, "user": "admin"})  
 ```    
 
