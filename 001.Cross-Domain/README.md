@@ -18,6 +18,7 @@
 <link href=XXX />  
 <script src=XXX />   
 <iframe src=XXX />   
+还有样式中background:url()、@font-face()等文件外链
 ```
 
 ### 出现跨域的场景
@@ -39,7 +40,7 @@ https://segmentfault.com/a/1190000011145364
 https://www.jianshu.com/p/66fcfac9ea33?utm_campaign
 
 
-#### 1、 通过jsonp跨域   
+#### 1、通过jsonp跨域   
 
 <p>通常为了减轻web服务器的负载，我们把js、css，img等静态资源分离到另一台独立域名的服务器上，在html页面中再通过相应的标签从不同域名下加载静态资源，而被浏览器允许，基于此原理，我们可以通过动态创建script，再请求一个带参网址实现跨域通信。</p>  
 
@@ -93,12 +94,39 @@ console.log('Server is running at port 8080...');
 ```  
 
 
-2、 document.domain + iframe跨域  
+#### 2、document.domain + iframe跨域  
+
+此方案仅限主域相同，子域不同的跨域应用场景。  
+实现原理：两个页面都通过js强制设置document.domain为基础主域，就实现了同域。   
+
+<p>父窗口：(http://www.domain.com/a.html)</p>   
+
+```html  
+ 
+<iframe id="iframe" src="http://child.domain.com/b.html"></iframe>
+<script>
+    document.domain = 'domain.com';
+    var user = 'admin';
+</script>
+```  
+
+<p>子窗口：(http://child.domain.com/b.html)</p>   
+```html 
+<script>
+    document.domain = 'domain.com';
+    // 获取父窗口中变量
+    console.log('get js data from parent ---> ' + window.parent.user);//输出父传给子窗口的参数
+</script>
+```  
+
 3、 location.hash + iframe  
 4、 window.name + iframe跨域  
 5、 postMessage跨域  
+
 6、 跨域资源共享（CORS）  
-7、 nginx代理跨域   
+
 8、 nodejs中间件代理跨域  
+
+7、 nginx代理跨域   
 9、 WebSocket协议跨域  
 
