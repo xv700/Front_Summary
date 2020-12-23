@@ -215,8 +215,8 @@ proxy('http://www.domain2.com/b.html', function(data){
 });
 ```   
 
-<p>proxy.html：(http://www.domain1.com/proxy....        
-中间代理页，与a.html同域，内容为空即可。  </p>  
+proxy.html：(http://www.domain1.com/proxy.html)
+中间代理页，与a.html同域，内容为空即可。    
 
 <p>b.html：(http://www.domain2.com/b.html)</p>   
 
@@ -225,8 +225,8 @@ proxy('http://www.domain2.com/b.html', function(data){
     window.name = 'This is domain2 data!';
 </script>
 ```   
-总结：通过iframe的src属性由外域转向本地域，跨域数据即由iframe的window.name从外域传递到本地域。这个就巧妙地绕过了浏览器的跨域访问限制，但同时它又是安全操作。  
 
+总结：通过iframe的src属性由外域转向本地域，跨域数据即由iframe的window.name从外域传递到本地域。这个就巧妙地绕过了浏览器的跨域访问限制，但同时它又是安全操作。  
 
 
 5、 postMessage跨域  
