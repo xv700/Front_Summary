@@ -215,8 +215,8 @@ proxy('http://www.domain2.com/b.html', function(data){
 });
 ```   
 
-<p>proxy.html：(http://www.domain1.com/proxy.... </p>     
-中间代理页，与a.html同域，内容为空即可。  
+<p>proxy.html：(http://www.domain1.com/proxy....        
+中间代理页，与a.html同域，内容为空即可。  </p>  
 
 <p>b.html：(http://www.domain2.com/b.html)</p>   
 
