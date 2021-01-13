@@ -41,9 +41,8 @@
 
 ### 前端跨域解决方案   
 
-https://segmentfault.com/a/1190000011145364
+https://segmentfault.com/a/1190000011145364  
 https://www.jianshu.com/p/66fcfac9ea33?utm_campaign
-
 
 #### 1、通过jsonp跨域   
 
