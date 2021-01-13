@@ -3,7 +3,9 @@
 
 ## 定义    
    
-> 首先什么是同源策略？同源策略/SOP（Same origin policy）是一种约定，由Netscape公司1995年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到XSS、CSFR等攻击。所谓同源是指"协议+域名+端口"三者相同，即便两个不同的域名指向同一个ip地址，也非同源。
+> 首先什么是同源策略？同源策略/SOP（Same origin policy）是一种约定，由Netscape公司1995年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到XSS、CSFR等攻击。所谓同源是指"协议+域名+端口"三者相同，即便两个不同的域名指向同一个ip地址，也非同源。  
+那么什么是前端跨域呢？  
+前端跨域是指一个域下的文档或者脚本试图去请求另外一个域下的资源。
    
 ### 同源策略限制以下几种行为：
 
@@ -233,10 +235,15 @@ proxy.html：(http://www.domain1.com/proxy.html)
 
 点击查看详情：http://xv700.gitee.io/message-communication-for-web/#postMessage
 
+
+### 以下方案都是借助服务端实现的  
+
 6、 跨域资源共享（CORS）  
+
+点击查看详情：http://www.ruanyifeng.com/blog/2016/04/cors.html
 
 8、 nodejs中间件代理跨域  
 
 7、 nginx代理跨域   
-9、 WebSocket协议跨域  
 
+9、 WebSocket协议跨域  
