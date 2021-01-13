@@ -229,7 +229,9 @@ proxy.html：(http://www.domain1.com/proxy.html)
 总结：通过iframe的src属性由外域转向本地域，跨域数据即由iframe的window.name从外域传递到本地域。这个就巧妙地绕过了浏览器的跨域访问限制，但同时它又是安全操作。  
 
 
-5、 postMessage跨域  
+5、 postMessage跨域    
+
+点击查看详情：http://xv700.gitee.io/message-communication-for-web/#postMessage
 
 6、 跨域资源共享（CORS）  
 
