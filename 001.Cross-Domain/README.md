@@ -240,9 +240,13 @@ proxy.html：(http://www.domain1.com/proxy.html)
 6、 跨域资源共享（CORS）  
 
 点击查看详情：http://www.ruanyifeng.com/blog/2016/04/cors.html
+7、 nginx代理跨域    
 
-8、 nodejs中间件代理跨域  
+点击查看详情：https://segmentfault.com/a/1190000012859206 
 
-7、 nginx代理跨域   
+8、 nodejs中间件代理跨域   
+
+node中间件实现跨域代理，原理大致与nginx相同，都是通过一个代理服务器，实现数据的转发，也可以通过设置cookieDomainRewrite参数修改响应头中cookie中域名，实现当前域的cookie写入，方便接口登录认证。  
 
 9、 WebSocket协议跨域  
+
