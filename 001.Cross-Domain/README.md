@@ -41,10 +41,7 @@
 
 ### 前端跨域解决方案   
 
-https://segmentfault.com/a/1190000011145364  
-https://www.jianshu.com/p/66fcfac9ea33?utm_campaign
-
-#### 1、通过jsonp跨域   
+#### 1、通过jsonp跨域(解决ajax跨域问题)   
 
 <p>通常为了减轻web服务器的负载，我们把js、css，img等静态资源分离到另一台独立域名的服务器上，在html页面中再通过相应的标签从不同域名下加载静态资源，而被浏览器允许，基于此原理，我们可以通过动态创建script，再请求一个带参网址实现跨域通信。</p>  
 
