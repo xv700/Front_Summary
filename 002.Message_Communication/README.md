@@ -34,7 +34,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
+<title>修改背景颜色</title>
 <script>
 function changeStyle(){
 	var x=document.getElementById("myframe");
