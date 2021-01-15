@@ -31,18 +31,30 @@ GITHUB地址:https://github.com/xv700/Front_Summary
 
 > 当一个元素接收到事件的时候 会把他接收到的事件传给自己的父级，一直到window 。（注意这里传递的仅仅是事件并不传递所绑定的事件函数。所以如果父级没有绑定事件函数，就算传递了事件 也不会有什么表现 但事件确实传递了。）
 
-```js
-var div1 = document.getElementById("div1");
-var div2 = document.getElementById("div2");
-   div2.onclick = function(){alert(1);};
-   div1.onclick = function(){alert(2);};//父亲
-//html代码
-
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>修改背景颜色</title>
+</head>
+<body>
+	
  <div id="div1">
 
     <div id="div2"></div>
  </div>
-```
+
+</body>
+</html>
+<script>
+var div1 = document.getElementById("div1");
+var div2 = document.getElementById("div2");
+   div2.onclick = function(){alert(1);};
+   div1.onclick = function(){alert(2);};//父亲
+</script>
+```  
+
 ### 003.浮点运算的精度
 
 （例：0.1+0.7=0.7999999999999999）
