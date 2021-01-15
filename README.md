@@ -41,8 +41,7 @@ GITHUB地址:https://github.com/xv700/Front_Summary
 <body>
 	
  <div id="div1">
-
-    <div id="div2"></div>
+    <div id="div2">点这里666</div>
  </div>
 
 </body>
