@@ -36,7 +36,7 @@ GITHUB地址:https://github.com/xv700/Front_Summary
 <html>
 <head>
 <meta charset="utf-8">
-<title>修改背景颜色</title>
+<title>事件冒泡</title>
 </head>
 <body>
 	
