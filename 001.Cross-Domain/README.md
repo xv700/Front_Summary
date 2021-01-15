@@ -239,7 +239,8 @@ proxy.html：(http://www.domain1.com/proxy.html)
 
 6、 跨域资源共享（CORS）  
 
-点击查看详情：http://www.ruanyifeng.com/blog/2016/04/cors.html
+点击查看详情：http://www.ruanyifeng.com/blog/2016/04/cors.html  
+
 7、 nginx代理跨域    
 
 点击查看详情：https://segmentfault.com/a/1190000012859206 
