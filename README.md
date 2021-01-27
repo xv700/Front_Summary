@@ -58,7 +58,9 @@ var div2 = document.getElementById("div2");
 
    //需求是我只想点击div2并运行div2对应的函数，但是实际是先运行了div2，然后又运行了div1
 </script>
-```  
+```   
+#### 怎么解决？
+
 
 ### 003.浮点运算的精度
 
