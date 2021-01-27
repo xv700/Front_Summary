@@ -37,6 +37,10 @@ GITHUB地址:https://github.com/xv700/Front_Summary
 <head>
 <meta charset="utf-8">
 <title>事件冒泡</title>
+<style>
+#div1{ padding: 20px; background: red}
+#div2{ padding: 20px; background: green}
+</style>
 </head>
 <body>
 	
