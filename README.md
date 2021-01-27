@@ -2,7 +2,7 @@
 
 <h1 align="center">前端技术总结</h1>
 
-国内码云地址:https://gitee.com/xv700/Message-communication-for-web
+国内码云地址:https://gitee.com/xv700/Front_Summary
 
 GITHUB地址:https://github.com/xv700/Front_Summary
 
@@ -79,11 +79,51 @@ https://github.com/haizlin/fe-interview/issues/494
 
 ### 009.复制粘贴，粘贴截图
 
-### 010.垂直水平居中
->在CSS中如果对元素进行水平居中是非常简单的：
+### 010.文字和元素的垂直水平居中  
+
+https://www.cnblogs.com/huchong/p/7875127.html  
+https://www.jianshu.com/p/507fdba00e6c  
+
+> 注：因为行内元素自身宽高为0，所以只有在块级元素前提下  
+
+#### 文字的水平居中  
+
+
+> 1.在文字所在的元素上添加样式 text-align:center  
+> 2.在文字所在的元素上添加属性 align="center" 
+
+#### 文字的垂直居中
+
+> 1.在文字所在的元素上添加样式,使其样式的 line-height === height即可
+> 2.在文字所在的元素高度不确定，CSS 给要居中元素设置一个伪元素   
+
+~~~html
+    <div class='father'>
+        <div class="son">这是要居中的文字</div>
+    </div>
+~~~
+
+~~~css
+        .son{
+            height: 91px;/*这里随机写任何一个像素*/
+            background: blue;
+            color: #fff;
+        }
+
+        .son::before{
+            display: inline-block;
+            content: "";
+            height: 100%;
+            vertical-align: middle;
+        }
+~~~
+
+
+#### 元素
+>在CSS中如果对元素进行水平居中是非常简单的：  
 >如果它是一个行内元素， 就对它的父元素应用 text-align:center;
 >如果它是一个块级元素，就对它自身应用 margin:auto。
->然而如果要对一个元素进行垂直居中是有些复杂的。
+>然而如果要对一个元素进行垂直居中是有些复杂的。  
 1.首先，定义一个需要垂直居中的div元素，它的宽度和高度均为300px，背景色为蓝色。代码如下： 
 ~~~html
 <!DOCTYPE html>
