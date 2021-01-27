@@ -58,7 +58,7 @@ var div2 = document.getElementById("div2");
 
 （例：0.1+0.7=0.7999999999999999）
 
-https://www.html.cn/archives/7340/
+https://www.html.cn/archives/7340/  
 https://www.cnblogs.com/powerwu/articles/13023859.html
 
 ### 004.获取浏览器当前页面的滚动条高度
@@ -89,8 +89,8 @@ https://www.jianshu.com/p/507fdba00e6c
 #### 文字的水平居中  
 
 
-> 1.在文字所在的元素上添加样式 text-align:center  
-> 2.在文字所在的元素上添加属性 align="center" 
+> 方法一：在文字所在的元素上添加样式 text-align:center  
+> 方法二：在文字所在的元素上添加属性 align="center" 
 
 #### 文字的垂直居中
 
