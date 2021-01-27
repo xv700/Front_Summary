@@ -94,30 +94,29 @@ https://www.jianshu.com/p/507fdba00e6c
 
 #### 文字的垂直居中
 
-> 1.在文字所在的元素上添加样式,使其样式的 line-height === height即可
-> 2.在文字所在的元素高度不确定，CSS 给要居中元素设置一个伪元素   
+> 方法一：在文字所在的元素上添加样式,使其样式的 line-height === height即可  
+> 方法二：在文字所在的元素高度不确定，CSS 给要居中元素设置一个伪元素   
 
 ~~~html
-    <div class='father'>
-        <div class="son">这是要居中的文字</div>
-    </div>
+<div class='father'>
+    <div class="son">这是要居中的文字</div>
+</div>
 ~~~
 
 ~~~css
-        .son{
-            height: 91px;/*这里随机写任何一个像素*/
-            background: blue;
-            color: #fff;
-        }
+.son{
+    height: 91px;/*这里随机写任何一个像素*/
+    background: blue;
+    color: #fff;
+}
 
-        .son::before{
-            display: inline-block;
-            content: "";
-            height: 100%;
-            vertical-align: middle;
-        }
-~~~
-
+.son::before{
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+}
+~~~  
 
 #### 元素
 >在CSS中如果对元素进行水平居中是非常简单的：  
