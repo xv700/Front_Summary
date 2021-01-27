@@ -51,6 +51,8 @@ var div1 = document.getElementById("div1");
 var div2 = document.getElementById("div2");
    div2.onclick = function(){alert(1);};
    div1.onclick = function(){alert(2);};//父亲
+
+   //需求是我只想点击div2并运行div2对应的函数，但是实际是先运行了div2，然后又运行了div1
 </script>
 ```  
 
@@ -95,7 +97,7 @@ https://www.jianshu.com/p/507fdba00e6c
 #### 文字的垂直居中
 
 > 方法一：在文字所在的元素上添加样式,使其样式的 line-height === height即可  
-> 方法二：在文字所在的元素高度不确定，CSS 给要居中元素设置一个伪元素   
+> 方法二：在文字所在的元素高度不确定的时候，CSS 给要居中元素设置一个伪元素   
 
 ~~~html
 <div class='father'>
